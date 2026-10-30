@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101018">
+  <meta name="description" content="A clean, static starter for an authorized embedded-content page.">
+  <link rel="manifest" href="/stuff/json/alsomanifest.json">
+  <link rel="icon" type="image/png" href="/stuff/logo.png">
+  <link rel="stylesheet" href="/stuff/css/styles.css">
+  <link rel="stylesheet" href="/stuff/css/alert.css">
+  <title>embed — starter</title>
+</head>
+<body>
+  <div id="particles-background" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="embed home">
+        <img src="/stuff/logo.png" alt="" width="38" height="38">
+        <span>embed<span class="brand-dot">.</span></span>
+      </a>
+      <span class="status"><span class="status-dot"></span> local demo</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">PROJECT STARTER</p>
+        <h1>a clean place to<br><span>build from here.</span></h1>
+        <p class="hero-copy">This starter includes the page shell, styling, alert component, generated image assets, and a small particle background. The preview below is a local page owned by this project and intentionally isolated to your own embedded content.</p>
+      </section>
+
+      <section class="workspace" aria-labelledby="workspace-title">
+        <div class="workspace-heading">
+          <div>
+            <p class="eyebrow">PREVIEW</p>
+            <h2 id="workspace-title">embedded page</h2>
+          </div>
+          <button class="secondary-button" id="reload-preview" type="button">reload preview</button>
+        </div>
+        <div class="frame-wrap">
+          <iframe id="embedframe" src="/preview.html" title="local project preview" loading="lazy" sandbox="allow-scripts"></iframe>
+        </div>
+        <p class="fine-print">the iframe is intentionally fixed to <code>/preview.html</code>. add only content you own or are authorized to embed.</p>
+      </section>
+
+      <section class="feature-grid" aria-label="Project contents">
+        <article class="feature-card"><span class="feature-index">01</span><h3>organized files</h3><p>separate folders for css, javascript, images, icons, and json.</p></article>
+        <article class="feature-card"><span class="feature-index">02</span><h3>responsive layout</h3><p>works on smaller screens without a framework or build step.</p></article>
+        <article class="feature-card"><span class="feature-index">03</span><h3>no external packages</h3><p>the included preview and particle effect use browser-native code.</p></article>
+      </section>
+    </main>
+
+    <footer class="footer"><span>embed starter</span><span>static html · css · js</span></footer>
+  </div>
+
+  <div class="message-box" id="message-box" role="status" aria-live="polite"></div>
+  <script src="/stuff/js/particles.js" defer></script>
+  <script src="/stuff/js/embedparticles.js" defer></script>
+  <script src="/stuff/js/app.js" defer></script>
+</body>
+</html>
