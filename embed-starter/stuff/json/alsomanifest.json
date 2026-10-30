@@ -1,0 +1,16 @@
+{
+  "name": "embed starter",
+  "short_name": "embed",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d14",
+  "theme_color": "#101018",
+  "icons": [
+    {
+      "src": "/stuff/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
